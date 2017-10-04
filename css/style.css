@@ -2,12 +2,15 @@ html, body {
 	height: 100%;
 	overflow: hidden;
 	background-color: #fff;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
+	
 }
 
-::-webkit-scrollbar { 
-    display: none; 
+/*::-webkit-scrollbar {
+    display: none;
+} */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 
 h2{
@@ -52,6 +55,8 @@ iframe {
 img {
 	width: 60%;
 	margin: 10px 0 10px 20%;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
 }
 
 div {
@@ -78,12 +83,32 @@ div {
 	background-color: #80c7a6;
 	height: 45%;
 	width: 80%;
+	margin-left: 5%;
+}
+
+#lookbook::-webkit-scrollbar {/*hela scrollbaren*/
+    width: 8px;
+    -webkit-box-shadow:none;
+
+}
+
+#lookbook::-webkit-scrollbar-track {/*bakgrunden*/
+    -webkit-box-shadow: inset 0 0 0px;
+    margin:5px;
+
+}
+
+#lookbook::-webkit-scrollbar-thumb {/*den man drar i*/
+    background-color: white;
+    opacity: 0.3; 
+    border-radius:10px;
+
 }
 
 #concept {
 	background-color: #eaff00;
 	height: 70%;
-	width: 28%;
+	width: 25%;
 	margin-right: 5%;
 }
 
