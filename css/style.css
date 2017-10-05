@@ -3,62 +3,39 @@ html, body {
 	width: 100%;
 	overflow: hidden;
 	background-color: #fff;
-	
-}
-
-/*::-webkit-scrollbar {
-    display: none;
-} */
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	z-index: -1;
 }
 
 h2{
 	font-size: 30px;
-	cursor: pointer;
 }
+
 h3, a{
 	font-size: 20px;
 	margin-top: 5px;
 	color: black;
+
 }
-/*
-p,
-a {
-	font-size: 13px;
-	margin: 0px 5% 0 5%;
-	line-height: 16px;
-	text-align: left;
-	color: black;
-	opacity: 0.8;
-}
-*/
+
 p {
-	font-size: 13px;
-	margin: 0px 5% 0 5%;
-	letter-spacing: 0.5px;
+	font-size: 14px;
 	line-height: 15px;
 	text-align: left;
 	float: center;
 	color: black;
+	opacity: 0.4;
+	font-family: "Helvetica", sans-serif;
 }
 
 .text {
-	margin: 10px 0 20px 0;
 	overflow: hidden;
-}
-
-iframe {
-	width: 60%;
-	height: 50%;
-	margin: 10px 0 10px 20%;
-
+	margin: 10px 20% 10px 20%;
+	padding: 10px;
 }
 
 img {
 	width: 60%;
-	margin: 10px 0 10px 20%;
+	margin: 10px 0% 10px 20%;
 	-webkit-touch-callout: none; /* iOS Safari */
 	-webkit-user-select: none; /* Safari */
 }
@@ -68,113 +45,130 @@ div {
 	overflow: auto;
 }
 
-
-#container {
+#container { /*Hela sidan*/
 	height: 97%;
 	width: 98%;
 	margin: 1%;
 	float: left;
 }
 
-
-#leftContainer {
+#leftContainer { /*Vänster stapel*/ 
 	width: 34%;
 	height: 100%;
 	overflow: hidden;
+	margin-left: 1%;
 }
 
-#lookbook {
+/*-----------------Alla boxar------------------*/
+#identity {
 	background-color: #eaff00;
 	height: 45%;
 	width: 85%;
-	margin-left: 5%;
-}
+	margin: 2% 0 0 5%;
 
-.fullscreen::-webkit-scrollbar {/*hela scrollbaren*/
-    width: 8px;
-    -webkit-box-shadow:none;
-
-}
-
-.fullscreen::-webkit-scrollbar-track {/*bakgrunden*/
-    -webkit-box-shadow: inset 0 0 0px;
-    margin:3px;
-
-}
-
-.fullscreen::-webkit-scrollbar-thumb {/*den man drar i*/
-    background-color: white;
-    opacity: 0.3; 
-    border-radius:10px;
-
-}
-
-#concept {
-	background-color: #80c7a6;
-	height: 70%;
-	width: 25%;
-	margin: 2% 5% 0% 5%;
+	cursor: pointer;
 }
 
 #bookCover {
 	background-color: #291dd1;
 	width: 70%;
 	height: 45%;
-	margin:7%;
+	margin: 6% 0 0 15%;
+	cursor: pointer;
+}
+
+#fashion {
+	background-color: #80c7a6;
+	height: 65%;
+	width: 28%;
+	margin: 2% 5% 0% 1%;
+	cursor: pointer;
 }
 
 #foto {
 	width: 24%;
 	height: 50%;
 	background-color: #f1b89c;
-	float: right;
-	margin-top:2%;
+	margin:2% 0 0 1%;
+	cursor: pointer;
 }
+/*-----------------Alla boxar SLUT------------------*/
+
+/*-----------------Contact------------------*/
+#contact {
+	height: 30%;
+	width: 280px;
+	float: right;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 0;
+}
+
+#contact h2{
+	margin-top: 10px;
+}
+
+/*-----------------Contact SLUT------------------*/
+
+/*-----------------SCROLL BAR-----------------*/
+.fullscreen::-webkit-scrollbar {/*hela scrollbaren*/
+    width: 8px;
+    -webkit-box-shadow:none;
+}
+
+.fullscreen::-webkit-scrollbar-track {
+    margin:3px;
+}
+
+.fullscreen::-webkit-scrollbar-thumb {/*den man drar i*/
+    background-color: white;
+    opacity: 0.3; 
+    border-radius:10px;
+}
+
+#identity.fullscreen::-webkit-scrollbar-thumb {
+    opacity: 0.5; 
+}
+
+#contact::-webkit-scrollbar {/*contact scrollbar*/
+    width: 8px;
+    -webkit-box-shadow:none;
+}
+
+#contact::-webkit-scrollbar-thumb {
+    background-color: black;
+    opacity: 0.1; 
+    border-radius:10px;
+}
+
+/*-----------------SCROLL BAR SLUT-----------------*/
+
+/*-----------------CLOSE-----------------*/
+
+div.fullscreen .close {		/*x-et visas endast i fullscreen*/
+	display: none;
+}
+
+div.fullscreen.big .close {
+	display: block;
+}
+
+.close {
+	position: fixed;
+	z-index: 0;
+	right: 5%;
+	font-size: 45px;
+	font-weight: lighter;
+	color: black;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+/*-----------------CLOSE SLUT-----------------*/
 
 .shadow {
 	box-shadow: 5px 5px 20px magenta;	
-}
-
-
-#contact {
-	float: right;
-	width: : auto;
-	height: 15vh;
-	overflow: hidden;
-	margin-top: 15%;
-	margin-right: 3%;
-
-}
-
-#about {
-	height: 27px;
-	width: 165px;
-	float: right;
-	position: fixed;
-	bottom: 10px;
-	right: 5px;
-	overflow: hidden;
-	text-decoration: underline;
-}
-
-
-#utvandrarna {
-	width: 50%;
-	margin-left: 25%;
-	background-image: url("assets/bok/utvandrarna2.png");
-	background-size: 100%;
-	overflow: visible;
-}
-
-#utvandrarna:hover {
-	background-image: url("assets/bok/utvandrarna2.png");
-	background-size: 100%;
-
-}
-
-div.fullscreen {
-	/*float: left;
-	overflow: auto;*/
 }
 
 .big {
@@ -183,10 +177,11 @@ div.fullscreen {
 	position: absolute !important;
 	box-shadow: 10px 10px 20px red !important;
 	margin:0 !important;
+	z-index: 1;
+	cursor: default !important;
 }
 
-
-div.big p{
+div.big p{ /*Typsnitt för fullscreen*/
 	padding-left: 10%;
 	padding-right: 10%;
 }
@@ -195,28 +190,12 @@ div.big a{
 	padding-right: 10%;
 }
 
-#about.big {
-	background-color: #f1b89c;
-	float: left;
-	position: relative;
-	bottom: auto;
-	right: auto;
-}
 
-@keyframes big {
-  0%   {}
-  100% {
-  	width: 100%;
-  	height: 100%;
-  	pause;
-  }
-}
 
 /* ---- Mobile ---- */
 
 @media only screen and (max-width: 768px) {
     body {
-        background-color: red;
     }
 
 #container {
@@ -234,25 +213,26 @@ div.big a{
 
 #leftContainer {
 	width: 100%;
-	height: 40%;
+	height: 50%;
 	float: none;
 	margin:0;
 }
 
 
-#lookbook, #concept, #bookCover, #foto, #animation {
-	height: 20%;
+#fashion, #identity, #bookCover, #foto {
+	height: 25%;
 	width: 100%;
 	float: none;
+	margin: 5%;
 	overflow: hidden;
 }
 
-#lookbook, #concept{
+#identity, #bookCover{
 	height: 50%;
+	margin: 5%;
 }
 
-
+#contact {
+	display: none;
 }
-
-
 
