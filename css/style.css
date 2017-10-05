@@ -1,5 +1,6 @@
 html, body {
-	height: 100%;
+	height: 100% !important; 
+	width: 100%;
 	overflow: hidden;
 	background-color: #fff;
 	
@@ -17,6 +18,11 @@ h2{
 	font-size: 30px;
 	cursor: pointer;
 }
+h3, a{
+	font-size: 20px;
+	margin-top: 5px;
+	color: black;
+}
 /*
 p,
 a {
@@ -28,11 +34,9 @@ a {
 	opacity: 0.8;
 }
 */
-p,
-a {
+p {
 	font-size: 13px;
 	margin: 0px 5% 0 5%;
-	font-family: 'Akkurat', sans-serif;
 	letter-spacing: 0.5px;
 	line-height: 15px;
 	text-align: left;
@@ -80,25 +84,25 @@ div {
 }
 
 #lookbook {
-	background-color: #80c7a6;
+	background-color: #eaff00;
 	height: 45%;
-	width: 80%;
+	width: 85%;
 	margin-left: 5%;
 }
 
-#lookbook::-webkit-scrollbar {/*hela scrollbaren*/
+.fullscreen::-webkit-scrollbar {/*hela scrollbaren*/
     width: 8px;
     -webkit-box-shadow:none;
 
 }
 
-#lookbook::-webkit-scrollbar-track {/*bakgrunden*/
+.fullscreen::-webkit-scrollbar-track {/*bakgrunden*/
     -webkit-box-shadow: inset 0 0 0px;
-    margin:5px;
+    margin:3px;
 
 }
 
-#lookbook::-webkit-scrollbar-thumb {/*den man drar i*/
+.fullscreen::-webkit-scrollbar-thumb {/*den man drar i*/
     background-color: white;
     opacity: 0.3; 
     border-radius:10px;
@@ -106,10 +110,10 @@ div {
 }
 
 #concept {
-	background-color: #eaff00;
+	background-color: #80c7a6;
 	height: 70%;
 	width: 25%;
-	margin-right: 5%;
+	margin: 2% 5% 0% 5%;
 }
 
 #bookCover {
@@ -121,19 +125,25 @@ div {
 
 #foto {
 	width: 24%;
-	height: 40%;
+	height: 50%;
 	background-color: #f1b89c;
+	float: right;
+	margin-top:2%;
 }
 
 .shadow {
 	box-shadow: 5px 5px 20px magenta;	
 }
 
-#animation {
-	background-color: #d8543e;
-	height: 36%;
-	width: 28%;
-	margin-top:7%;
+
+#contact {
+	float: right;
+	width: : auto;
+	height: 15vh;
+	overflow: hidden;
+	margin-top: 15%;
+	margin-right: 3%;
+
 }
 
 #about {
@@ -147,23 +157,6 @@ div {
 	text-decoration: underline;
 }
 
-#bottom {
-	overflow: hidden;
-	width: 100px;
-	position: absolute;
-	-webkit-animation-name: info;
-  -webkit-animation-duration: 9s;
-  -webkit-animation-iteration-count: 2;
-  animation-delay: 2s;
-  	opacity: 0;	
-  	top: 15%;
-  	right: 10%; 
-}
-@keyframes info {
-  0%   { opacity: 0; }
-  50%  { opacity: 1.0; }
-  100% { opacity: 0 }
-}
 
 #utvandrarna {
 	width: 50%;
@@ -174,9 +167,8 @@ div {
 }
 
 #utvandrarna:hover {
-	background-image: url("assets/bok/roterande.gif");
+	background-image: url("assets/bok/utvandrarna2.png");
 	background-size: 100%;
-	background-color: green;
 
 }
 
