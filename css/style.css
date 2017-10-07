@@ -167,6 +167,22 @@ div.fullscreen.big .close {
 
 /*-----------------CLOSE SLUT-----------------*/
 
+div.fullscreen .smallimg {
+	display: block;
+}
+
+div.fullscreen.big .smallimg {
+	display: none;
+}
+
+div.fullscreen .bigimg {
+	display: none;
+}
+
+div.fullscreen.big .bigimg {
+	display: block;
+}
+
 .shadow {
 	box-shadow: 5px 5px 20px magenta;	
 }
