@@ -1,0 +1,184 @@
+body {
+	background-color: #8f70ee;
+	overflow: hidden;
+}
+
+p1 {
+	font-family: 'Literaturnaya';
+	font-size: 10pt;
+}
+
+p2 {
+	font-family: 'Literaturnaya';
+	font-size: 16pt;
+}
+
+h2 {
+	font-family: 'Literaturnaya';
+	font-size: 20pt;
+	font-style: italic;
+}
+
+h3 {
+	font-family: 'Literaturnaya';
+	font-size: 20pt;
+}
+
+img {
+	width: 100%;
+}
+
+a1{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#lilith-logo{
+	display: block;
+	margin: auto;
+	margin-top: 40px;
+	width: 250px;
+}
+
+.text-box {
+	display: block;
+	width: 370px;
+	margin: auto;
+	margin-top: 5px;
+	text-align: center;
+	z-index: 3;
+}
+
+#kate {
+	position: absolute;
+	width: 300px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lilith-illu {
+	position: absolute;
+	width: 340px;
+	left: 50px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#rose-left {
+	position: absolute;
+	left: 0;
+	margin-top: -80px;
+	height: 970px;
+	width: auto;
+	margin-left: 3%
+}
+
+#rose-right {
+	position: absolute;
+	right: 0;
+	height: 970px;
+	margin-top: -80px;
+	margin-right: 3%;
+	width: auto;
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#clothes-menu {
+	text-align: center;
+	position: absolute;
+	left: 0;
+  	right: 0;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 15px;
+}
+
+#fire-clothes {
+	position: absolute;
+  	width: 210px;
+  	left: 0;
+  	right: 0;
+  	height: auto;
+  	margin-left: auto;
+  	margin-right: auto;
+  	opacity: 1;
+}
+
+#fire-clothes-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 210px;
+  opacity: 0;
+}
+
+.lilith-menu:hover #fire-clothes-overlay {
+  opacity: 1;
+}
+
+.lilith-menu:hover #fire-clothes {
+  opacity: 0;
+}
+
+#illustration-menu {
+	text-align: center;
+	position: absolute;
+	left: 0;
+  	right: 0;
+  	margin-left: auto;
+  	margin-right: auto;
+  	margin-top: 60px;
+}
+
+#fire-illustration {
+	position: absolute;
+  	width: 300px;
+  	left: 0;
+  	right: 0;
+  	height: auto;
+  	margin-top: 45px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	opacity: 1;
+}
+
+#fire-illustration-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: auto;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  opacity: 0;
+}
+
+.lilith-menu:hover #fire-illustration-overlay {
+  opacity: 1;
+}
+
+.lilith-menu:hover #fire-illustration {
+  opacity: 0;
+}
+
+
+/* ---- Mobile ---- */
+
+@media only screen and (max-width: 768px) {
+
+    #rose-left, #rose-right {
+    	display: none;
+    }
+ 
+
+

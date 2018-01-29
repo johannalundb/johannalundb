@@ -1,211 +1,123 @@
+@font-face {
+    font-family: 'snell_roundhandregular';
+    src: url('fonts/snellroundhand-01-webfont.woff2') format('woff2'),
+         url('fonts/snellroundhand-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('fonts/LiteraturnayaBold.woff2') format('woff2'),
+        url('fonts/LiteraturnayaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('fonts/LiteraturnayaBoldItalic.woff2') format('woff2'),
+        url('fonts/LiteraturnayaBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('fonts/LiteraturnayaPlain.woff2') format('woff2'),
+        url('fonts/LiteraturnayaPlain.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Literaturnaya';
+    src: url('fonts/LiteraturnayaItalic.woff2') format('woff2'),
+        url('fonts/LiteraturnayaItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
 html, body {
-	height: 100% !important; 
-	width: 100%;
-	overflow: hidden;
-	background-color: #fff;
-	z-index: -1;
-}
-
-h2{
-	font-size: 30px;
-}
-
-h3, a{
-	font-size: 20px;
-	margin-top: 5px;
-	color: black;
+	overflow-y: auto;
+	overflow-x: hidden;
 
 }
 
-p {
-	font-size: 14px;
-	line-height: 15px;
-	text-align: left;
-	float: center;
-	color: black;
-	opacity: 0.4;
-	font-family: "Helvetica", sans-serif;
+a {
+	text-decoration: none;
+	padding-left: 5px;
 }
 
-.text {
-	overflow: hidden;
-	margin: 10px 20% 10px 20%;
-	padding: 10px;
+a:hover {
+	font-family: Times New Roman;
+  	font-style: italic;
 }
 
-img {
-	width: 60%;
-	margin: 10px 0% 10px 20%;
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-}
-
-div {
-	float: left;
-	overflow: auto;
-}
-
-#container { /*Hela sidan*/
-	height: 97%;
-	width: 98%;
-	margin: 1%;
-	float: left;
-}
-
-#leftContainer { /*Vänster stapel*/ 
-	width: 34%;
-	height: 100%;
-	overflow: hidden;
-	margin-left: 1%;
-}
-
-/*-----------------Alla boxar------------------*/
-#identity {
-	background-color: #eaff00;
-	height: 45%;
-	width: 85%;
-	margin: 2% 0 0 5%;
-
-	cursor: pointer;
-}
-
-#bookCover {
-	background-color: #291dd1;
-	width: 70%;
-	height: 45%;
-	margin: 6% 0 0 15%;
-	cursor: pointer;
-}
-
-#fashion {
-	background-color: #80c7a6;
-	height: 65%;
-	width: 28%;
-	margin: 2% 5% 0% 1%;
-	cursor: pointer;
-}
-
-#foto {
-	width: 24%;
-	height: 50%;
-	background-color: #f1b89c;
-	margin:2% 0 0 1%;
-	cursor: pointer;
-}
-/*-----------------Alla boxar SLUT------------------*/
-
-/*-----------------Contact------------------*/
-#contact {
-	height: 210px;
-	width: 280px;
-	float: right;
+#huvud{
 	position: fixed;
-	bottom: 40px;
-	right: 40px;
-	z-index: 0;
+	margin-left: 4%;
+	margin-top: 3vh;
+	width: 94%;
+	font-family: 'snell_roundhandregular';
+	font-size:20pt;
+	z-index: 3;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none;          /* Likely future */  
 }
 
-#contact h2{
-	margin-top: 10px;
-}
-
-/*-----------------Contact SLUT------------------*/
-
-/*-----------------SCROLL BAR-----------------*/
-.fullscreen::-webkit-scrollbar {/*hela scrollbaren*/
-    width: 8px;
-    -webkit-box-shadow:none;
-}
-
-.fullscreen::-webkit-scrollbar-track {
-    margin:3px;
-}
-
-.fullscreen::-webkit-scrollbar-thumb {/*den man drar i*/
-    background-color: white;
-    opacity: 0.3; 
-    border-radius:10px;
-}
-
-#identity.fullscreen::-webkit-scrollbar-thumb {
-    opacity: 0.5; 
-}
-
-#contact::-webkit-scrollbar {/*contact scrollbar*/
-    width: 8px;
-    -webkit-box-shadow:none;
-}
-
-#contact::-webkit-scrollbar-thumb {
-    background-color: black;
-    opacity: 0.1; 
-    border-radius:10px;
-}
-
-/*-----------------SCROLL BAR SLUT-----------------*/
-
-/*-----------------CLOSE-----------------*/
-
-div.fullscreen .close {		/*x-et visas endast i fullscreen*/
-	display: none;
-}
-
-div.fullscreen.big .close {
-	display: block;
-}
-
-.close {
+#huvud-right {
 	position: fixed;
-	z-index: 0;
-	right: 5%;
-	font-size: 45px;
-	font-weight: lighter;
-	color: black;
-	opacity: 0.8;
-	cursor: pointer;
+	font-family: 'snell_roundhandregular';
+	font-size:20pt;
+	top: 3vh;
+	right: 4%;
+	z-index: 3;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  	-moz-user-select: none;     /* Firefox all */
+  	-ms-user-select: none;      /* IE 10+ */
+  	user-select: none;          /* Likely future */  
 }
 
-/*-----------------CLOSE SLUT-----------------*/
-
-div.fullscreen .smallimg {
-	display: block;
+#huvud:hover {
+	opacity: 1;
+	transition: .3s ease;
 }
 
-div.fullscreen.big .smallimg {
-	display: none;
+#about-text {
+	width: 500px;
+	overflow: hidden;
+	margin: auto;
+	padding-left: 30px;
+	margin-top: 25vh;
+	padding-bottom: 10px;
 }
 
-div.fullscreen .bigimg {
-	display: none;
+#about-text h2 {
+	font-family: 'snell_roundhandregular';
+	font-size:20pt;
+	padding-left: 0;
 }
 
-div.fullscreen.big .bigimg {
-	display: block;
+#about-text p, #about-text a {
+	font-family: Times New Roman;
+	font-style: italic;
+	font-size: 18pt;
+	line-height: 28px;
+	padding: 0;
 }
 
-.shadow {
-	box-shadow: 5px 5px 20px magenta;	
+.break { /*LINE-HEIGHT MELLAN RADER*/
+	margin-top: -8px;
 }
 
-.big {
-	height: 95% !important;
-	width: 95% !important;
-	position: absolute !important;
-	box-shadow: 10px 10px 20px red !important;
-	margin:0 !important;
-	z-index: 1;
-	cursor: default !important;
+::selection {
+  background-color: #d3b4fd;
+  opacity: 1;
 }
-
-div.big p{ /*Typsnitt för fullscreen*/
-	padding-left: 10%;
-	padding-right: 10%;
-}
-div.big a{
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
 
 
 /* ---- Mobile ---- */
@@ -213,42 +125,4 @@ div.big a{
 @media only screen and (max-width: 768px) {
     body {
     }
-
-#container {
-	height: 100%;
-	width: 100%;
-	margin:0;
-}
-
-.big {
-	overflow: auto !important;
-	left: 10px;
-	top: 10px;
-	height: 95% !important;
-}
-
-#leftContainer {
-	width: 100%;
-	height: 50%;
-	float: none;
-	margin:0;
-}
-
-
-#fashion, #identity, #bookCover, #foto {
-	height: 25%;
-	width: 100%;
-	float: none;
-	margin: 5%;
-	overflow: hidden;
-}
-
-#identity, #bookCover{
-	height: 50%;
-	margin: 5%;
-}
-
-#contact {
-	display: none;
-}
 

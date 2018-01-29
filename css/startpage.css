@@ -1,0 +1,152 @@
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */   
+  background-color: black;
+}
+/*
+body.broderi {
+  background-color: #d9d9d9;
+  transition: 1s ease;
+}
+
+body.lilith {
+  background: #8f70ee;
+  transition: .7s ease;
+}
+
+/*
+body.bookCover {
+  background-color: #5a6aff;
+  transition: .7s ease
+}*/
+
+a {
+  color: white;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+#info {
+  position: relative;
+  margin-top: 28%;
+  text-align: center;
+  font-style: italic;
+  opacity: 0;
+  animation-name: info;
+  animation-duration: 3s;
+  color: white;
+}
+
+@keyframes info {
+  0% {opacity: 0.7;}
+  70% {opacity: 0.7}
+  100% { opacity: 0; }
+}
+
+#startpage-menu a {
+  font-family: 'snell_roundhandregular';
+  font-size: 16pt;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 15px;
+  padding: 7px 0 7px 0;
+  color: white;
+}
+
+#startpage-menu a:hover {
+  opacity: 1;
+  font-family: Times New Roman;
+  font-style: italic;
+  font-size: 14.5pt;
+  padding: 12px 0 12px 0;
+}
+
+#startpage-menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 5vh;
+  text-align: center;
+}
+
+.front-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 11vh;
+  height: 70vh;
+  width: 80%;
+  opacity: 0;
+}
+
+
+.rubrik-overlay {
+  position: absolute;
+  height: 10px;
+  width: auto;
+  opacity: 0;
+}
+
+.rubrik:hover .front-image {
+  opacity: 1;
+  transition: .7s ease;
+}
+
+#kate {
+  position: absolute;
+  width: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lilith-illu {
+  position: absolute;
+  width: 320px;
+  height: auto;
+  left: 30px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color {
+  transition: .7s ease;
+  background-color: #fff;
+}
+
+#broderi {
+  height: 67vh;
+  margin-top: 2vh;
+}
+
+#lilith {
+  height: 60vh;
+  margin-top: 5vh;
+}
+
+#perfume {
+  height: 60vh;
+  margin-top: 5vh;
+}
+
+
+/* ---- Mobile ---- */
+
+@media only screen and (max-width: 768px) {
+    body {
+    }
+
