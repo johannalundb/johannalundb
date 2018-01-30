@@ -5,29 +5,15 @@ body {
   -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */   
-  background-color: black;
+  user-select: none;          /* Likely future */  
 }
 /*
 body.broderi {
   background-color: #d9d9d9;
   transition: 1s ease;
 }
+*/
 
-body.lilith {
-  background: #8f70ee;
-  transition: .7s ease;
-}
-
-/*
-body.bookCover {
-  background-color: #5a6aff;
-  transition: .7s ease
-}*/
-
-a {
-  color: white;
-}
 
 img {
   height: 100%;
@@ -36,13 +22,12 @@ img {
 
 #info {
   position: relative;
-  margin-top: 28%;
+  margin-top: 45vh;
   text-align: center;
   font-style: italic;
   opacity: 0;
   animation-name: info;
   animation-duration: 3s;
-  color: white;
 }
 
 @keyframes info {
@@ -58,7 +43,6 @@ img {
   line-height: 30px;
   margin-left: 15px;
   padding: 7px 0 7px 0;
-  color: white;
 }
 
 #startpage-menu a:hover {

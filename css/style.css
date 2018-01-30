@@ -42,17 +42,65 @@
 html, body {
 	overflow-y: auto;
 	overflow-x: hidden;
-
+	width: 100%;
+	height: 100vh;
 }
 
 a {
 	text-decoration: none;
 	padding-left: 5px;
+	color: black;
 }
 
 a:hover {
 	font-family: Times New Roman;
   	font-style: italic;
+}
+
+img {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+}
+
+.image-box img {
+	width: 100%;
+	height: auto;
+}
+
+.tall-image-box img {
+	width: 49.5%;
+	margin-left: 0px;
+}
+
+.image-box, .tall-image-box{
+	width: 70%;
+	max-width: 750px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.text-box {
+	margin: auto;
+	width: 70%;
+	max-width: 750px;
+}
+
+.text-box p{
+	font-family: Times New Roman;
+	font-style: italic;
+	font-size: 16pt;
+	line-height: 18pt;
+	padding: 7px 0 5px 0;
+}
+
+.text-box h1 {
+	font-family: 'snell_roundhandregular';
+	font-size:5vw;
+	text-align: center;
+	padding: 7px 0 7px 0;
+
 }
 
 #huvud{
@@ -116,6 +164,7 @@ a:hover {
 
 ::selection {
   background-color: #d3b4fd;
+  color: white;
   opacity: 1;
 }
 
