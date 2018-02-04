@@ -7,13 +7,15 @@ body {
   -ms-user-select: none;      /* IE 10+ */
   user-select: none;          /* Likely future */  
 }
-/*
-body.broderi {
-  background-color: #d9d9d9;
-  transition: 1s ease;
-}
-*/
 
+body.lilith {
+  background-color: #8f70ee;
+  transition: 1.5s ease;
+}
+
+body.broderi {
+
+}
 
 img {
   height: 100%;
@@ -61,6 +63,7 @@ img {
   margin-right: auto;
   bottom: 5vh;
   text-align: center;
+
 }
 
 .front-image {

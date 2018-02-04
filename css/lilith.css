@@ -1,17 +1,7 @@
 body {
 	background-color: #8f70ee;
-	overflow: hidden;
 }
 
-p1 {
-	font-family: 'Literaturnaya';
-	font-size: 10pt;
-}
-
-p2 {
-	font-family: 'Literaturnaya';
-	font-size: 16pt;
-}
 
 h2 {
 	font-family: 'Literaturnaya';
@@ -22,6 +12,13 @@ h2 {
 h3 {
 	font-family: 'Literaturnaya';
 	font-size: 20pt;
+}
+
+p {
+	font-family: Times New Roman;
+	font-style: italic;
+	font-size: 12pt;
+	padding: 7px 0 5px 0;
 }
 
 img {

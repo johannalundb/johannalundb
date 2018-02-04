@@ -40,8 +40,6 @@
 }
 
 html, body {
-	overflow-y: auto;
-	overflow-x: hidden;
 	width: 100%;
 	height: 100vh;
 }
@@ -57,13 +55,6 @@ a:hover {
   	font-style: italic;
 }
 
-img {
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-  -moz-user-select: none;     /* Firefox all */
-  -ms-user-select: none;      /* IE 10+ */
-  user-select: none;          /* Likely future */  
-}
-
 .image-box img {
 	width: 100%;
 	height: auto;
@@ -71,7 +62,6 @@ img {
 
 .tall-image-box img {
 	width: 49.5%;
-	margin-left: 0px;
 }
 
 .image-box, .tall-image-box{
@@ -85,6 +75,7 @@ img {
 	margin: auto;
 	width: 70%;
 	max-width: 750px;
+	background-color: ;
 }
 
 .text-box p{
@@ -103,11 +94,11 @@ img {
 
 }
 
+
 #huvud{
 	position: fixed;
 	margin-left: 4%;
-	margin-top: 3vh;
-	width: 94%;
+	top: 3vh;
 	font-family: 'snell_roundhandregular';
 	font-size:20pt;
 	z-index: 3;
@@ -161,6 +152,31 @@ img {
 .break { /*LINE-HEIGHT MELLAN RADER*/
 	margin-top: -8px;
 }
+
+.pil-right {
+	position: fixed;
+	width: 40px;
+	bottom: 20px;
+	right: 20px;
+}
+
+.pil-right:hover {
+	opacity: 1;
+	transition: .7s ease;
+}
+
+.pil-left {
+	position: fixed;
+	width: 40px;
+	bottom: 20px;
+	left: 20px;
+}
+
+.pil-left:hover {
+	opacity: 1;
+	transition: .7s ease;
+}
+
 
 ::selection {
   background-color: #d3b4fd;
