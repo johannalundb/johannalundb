@@ -46,7 +46,6 @@ html, body {
 
 a {
 	text-decoration: none;
-	padding-left: 5px;
 	color: black;
 }
 
@@ -75,7 +74,6 @@ a:hover {
 	margin: auto;
 	width: 70%;
 	max-width: 750px;
-	background-color: ;
 }
 
 .text-box p{
@@ -108,6 +106,10 @@ a:hover {
   	user-select: none;          /* Likely future */  
 }
 
+#huvud a { 
+	padding-left: 5px;
+}
+
 #huvud-right {
 	position: fixed;
 	font-family: 'snell_roundhandregular';
@@ -126,28 +128,6 @@ a:hover {
 	transition: .3s ease;
 }
 
-#about-text {
-	width: 500px;
-	overflow: hidden;
-	margin: auto;
-	padding-left: 30px;
-	margin-top: 25vh;
-	padding-bottom: 10px;
-}
-
-#about-text h2 {
-	font-family: 'snell_roundhandregular';
-	font-size:20pt;
-	padding-left: 0;
-}
-
-#about-text p, #about-text a {
-	font-family: Times New Roman;
-	font-style: italic;
-	font-size: 18pt;
-	line-height: 28px;
-	padding: 0;
-}
 
 .break { /*LINE-HEIGHT MELLAN RADER*/
 	margin-top: -8px;

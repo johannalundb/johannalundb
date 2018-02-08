@@ -13,10 +13,6 @@ body.lilith {
   transition: 1.5s ease;
 }
 
-body.broderi {
-
-}
-
 img {
   height: 100%;
   width: auto;
@@ -43,12 +39,14 @@ img {
   font-size: 16pt;
   text-align: center;
   line-height: 30px;
-  margin-left: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 7px 0 7px 0;
 }
 
 #startpage-menu a:hover {
   opacity: 1;
+  text-align: center;
   font-family: Times New Roman;
   font-style: italic;
   font-size: 14.5pt;
@@ -63,7 +61,13 @@ img {
   margin-right: auto;
   bottom: 5vh;
   text-align: center;
+}
 
+#startpage-menu div.button-container {
+  position: relative;
+  float: center;
+  display: inline-block;
+  padding: 0;
 }
 
 .front-image {
@@ -81,6 +85,7 @@ img {
 
 .rubrik-overlay {
   position: absolute;
+  text-align: center;
   height: 10px;
   width: auto;
   opacity: 0;
@@ -94,6 +99,7 @@ img {
 #kate {
   position: absolute;
   width: 300px;
+  height: auto;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -130,10 +136,38 @@ img {
   margin-top: 5vh;
 }
 
+#mobile-format {
+  display: none;
+
+}
 
 /* ---- Mobile ---- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 650px) {
     body {
+        overflow: auto;
     }
+    #startpage-menu {
+      display: none;
+    }
+    #info {
+      display: none;
+    }
+
+    #mobile-format {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 50px;
+      padding-bottom: 30px;
+    }
+    .mobile-image {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .mobile-image img {
+      position: relative;
+
+    }
+}
 
