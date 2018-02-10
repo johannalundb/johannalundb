@@ -42,22 +42,48 @@ a{
 	color: black;
 }
 
+.lilith-header {
+	height: 100vh;
 
-#lilith-logo{
-	margin-top: 20px;
+}
+
+
+.lilith-header img {
+	height: 82vh;
+	width: auto;
+	position: absolute;
 	left: 0;
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	width: 200px;
 }
 
-.lilith-text-box {
-	width: 500px;
+#lilith-logo{
+	margin-top: 50px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+}
+
+.lilith-text {
 	margin: auto;
-	margin-top: 5px;
+	width: 500px;
+	margin-top: -30px;
 	text-align: center;
-	z-index: 3;
+}
+
+
+.lilith-text-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 45vh;
+	text-align: center;
 }
 
 .lilith-text-box a {
@@ -75,12 +101,8 @@ a{
 }
 
 #kate {
-	position: absolute;
 	width: 300px;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 }
 
 #lilith-illu {
@@ -94,26 +116,52 @@ a{
 
 
 #rose-left {
-	position: absolute;
-	right: 0;
-	margin-top: -80px;
-	height: 770px;
+	position: fixed;
+	left: 0;
+	top: 40px;
+	height: 92vh;
 	width: auto;
-	margin-right: 76%
+	margin-left: 10px;
 }
 
 #rose-right {
-	position: absolute;
-	left: 0;
-	height: 770px;
-	margin-top: -80px;
-	margin-left: 76%;
+	position: fixed;
+	right: 0;
+	top: 40px;
+	height: 92vh;
+	margin-right: 10px;
 	width: auto;
 	-webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
+#venus-left {
+	margin-left: 13%;
+	margin-top: 18vh;
+	height: 75vh;
+	transform: scaleX(-1);
+}
 
+#venus-right {
+	margin-right: 13%;
+	margin-top: 18vh;
+	height: 75vh;
+}
+
+#scorpio-left {
+	margin-left: 32%;
+	bottom:0;
+	margin-bottom: 13vh;
+	height: 20vh;
+	transform: scaleX(-1);
+}
+
+#scorpio-right {
+	margin-right: 32%;
+	bottom:0;
+	margin-bottom: 13vh;
+	height: 20vh;
+}
 
 #clothes-rubrik h3{
 	position: absolute;
@@ -167,11 +215,30 @@ div#illustration-div .lilith-image-box {
 
 /* ---- Mobile ---- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
 
     #rose-left, #rose-right {
     	display: none;
     }
- 
 
+}
 
+@media only screen and (max-width: 768px) {
+
+    #rose-left, #rose-right, #scorpio-left, #scorpio-right {
+    	display: none;
+    }
+ 	#venus-left {
+	margin-left: 5%;
+	}
+
+	#venus-right {
+	margin-right: 5%;
+	}
+
+	#lilith-logo{
+	height: 150px;
+	}
+	
+
+}
