@@ -213,30 +213,52 @@ a:hover {
 .mobile-tall-image {
 	display: none;
 }
+.mobile-rubrik {
+	display: none;
+	}
 
 /* ---- Mobile ---- */
 
 @media only screen and (max-width: 600px) {
 
-    .header .text-box {
-	bottom: 20px;
+
+	.header {
+		display: none;
+	}
+    .mobile-rubrik {
+	display: block;
+	}
+
+	.mobile-rubrik h1 {
+	font-family: 'snell_roundhandregular';
+	font-size:30pt;
+	text-align: center;
+
+	}
+
+	.text-box {
+		width: 90%;
 	}
 
 	.header .image-box {
 		display: none;
 	}
 
-	.header  .mobile-tall-image {
+	.mobile-tall-image {
 		display: inline-block;
 	}
-	.header  .mobile-tall-image img {
-		height: 85vh;
+	.mobile-tall-image img {
+		height: auto;
+		width: 100%;
 		left: 0;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
+	.image-box, .tall-image-box {
+		width: 100%;
+	}
 	.text-box h1 {
 	font-size:30pt;
 	}
