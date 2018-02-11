@@ -241,12 +241,16 @@ div#illustration-div .lilith-image-box {
 
 	#venus-right {
 	margin: auto;
-	margin-top: 15vh;
+	margin-top: 10vh;
 	}
 
 	#lilith-logo{
 	height: 150px;
 	}
 	
+	div#clothes-div .lilith-image-box {
+	width: 100%;
+	
+}
 
 }
