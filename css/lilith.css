@@ -239,6 +239,7 @@ div#illustration-div .lilith-image-box {
  	}
 
  	#mobile-logo {
+ 		display: block;
  		width: 56%;
  		margin-left: 22%;
  	}
