@@ -28,6 +28,10 @@ img {
   animation-duration: 3s;
 }
 
+#info p {
+  font-size: 14pt;
+}
+
 @keyframes info {
   0% {opacity: 0.7;}
   70% {opacity: 0.7}
@@ -79,7 +83,7 @@ img {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 5vh;
+  bottom: 4vh;
   text-align: center;
 }
 
@@ -100,15 +104,6 @@ img {
   margin-right: auto;
   top: 11vh;
   height: 70vh;
-  opacity: 0;
-}
-
-
-.rubrik-overlay {
-  position: absolute;
-  text-align: center;
-  height: 10px;
-  width: auto;
   opacity: 0;
 }
 
