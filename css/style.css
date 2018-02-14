@@ -136,42 +136,40 @@ a:hover {
 
 }
 
-
-#huvud{
+#huvud, #huvud-right, #back {
 	position: fixed;
-	margin-left: 30px;
 	top: 3vh;
 	font-family: 'snell_roundhandregular';
 	font-size:20pt;
-	z-index: 3;
+	z-index: 2;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
   	-moz-user-select: none;     /* Firefox all */
   	-ms-user-select: none;      /* IE 10+ */
   	user-select: none;          /* Likely future */  
 }
 
+#huvud{
+	left: 30px;
+}
+
+#huvud-right {
+	text-align: right;
+	right: 30px;
+}
 #huvud a { 
 	padding-left: 5px;
 }
 
-#huvud-right {
+#huvud a:hover {
+	font-size: 17pt;
+}
+
+#back {
 	position: fixed;
-	font-family: 'snell_roundhandregular';
-	font-size:20pt;
-	top: 3vh;
-	right: 30px;
-	z-index: 3;
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-  	-moz-user-select: none;     /* Firefox all */
-  	-ms-user-select: none;      /* IE 10+ */
-  	user-select: none;          /* Likely future */  
+	text-align: center;
+	width: 10%;
+	left: 45%;
 }
-
-#huvud:hover {
-	opacity: 1;
-	transition: .3s ease;
-}
-
 
 .break { /*LINE-HEIGHT MELLAN RADER*/
 	margin-top: -8px;
@@ -265,7 +263,9 @@ a:hover {
 	.header img{
 	top:60px;
 	}	
-	
+	#back {
+	display: none;
+	}
 
 }
 
