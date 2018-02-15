@@ -243,7 +243,6 @@ a:hover {
 	font-family: 'snell_roundhandregular';
 	font-size:30pt;
 	text-align: center;
-
 	}
 
 	.text-box {
@@ -284,13 +283,13 @@ a:hover {
 	}
 
 	#mobile-head {
-		display: block;
-		position: fixed;
-		top: 3vh;
+	display: block;
+	position: fixed;
+	top: 3vh;
 	font-family: 'snell_roundhandregular';
 	font-size:20pt;
 	z-index: 2;
-	left: 30px;
+	left: 20px;
 	padding-left: 5px;
 	}
 
