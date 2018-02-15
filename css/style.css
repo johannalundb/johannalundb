@@ -223,6 +223,10 @@ a:hover {
 	display: none;
 	}
 
+#mobile-head {
+	display: none;
+}
+
 /* ---- Mobile ---- */
 
 @media only screen and (max-width: 600px) {
@@ -272,7 +276,22 @@ a:hover {
 	top:60px;
 	}	
 	#back {
-	display: none;
+	left:30px;
+	}
+
+	#huvud {
+		display: none;
+	}
+
+	#mobile-head {
+		display: block;
+		position: fixed;
+		top: 3vh;
+	font-family: 'snell_roundhandregular';
+	font-size:20pt;
+	z-index: 2;
+	left: 30px;
+	padding-left: 5px;
 	}
 
 }
