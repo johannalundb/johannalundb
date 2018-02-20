@@ -88,6 +88,7 @@ a:hover {
 }
 
 .header img {
+	margin-top: 40px;
 	height: 82vh;
 	width: auto;
 	position: absolute;
@@ -110,7 +111,7 @@ a:hover {
 	right: 0;
 	margin-left: auto;
 	margin-right: auto;
-	bottom: 2vh;
+	bottom: 1vh;
 	width: 90%;
 }
 
@@ -176,7 +177,7 @@ a:hover {
 	position: fixed;
 	text-align: center;
 	width: 10%;
-	left: 50%;
+	left: 45%;
 }
 
 .break { /*LINE-HEIGHT MELLAN RADER*/
