@@ -92,6 +92,7 @@ img {
   top: 7vh;
   height: 75vh;
   opacity: 0;
+  z-index: 0;
 }
 
 .rubrik:hover .front-image {
@@ -167,7 +168,7 @@ img {
 }
 
 
-/*Ingen bild får vara högre än 80vh!*/
+/*Ingen bild får vara högre än 80vh! (Med margi-top + height)*/
 
 #broderi {
   height: 75vh;
@@ -186,7 +187,7 @@ img {
 }
 
 #website {
-  height: 80vh;
+  height: 78vh;
   margin-top: 2vh;
 }
 
