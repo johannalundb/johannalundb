@@ -140,7 +140,7 @@ a:hover {
 	position: fixed;
 	top: 3vh;
 	font-family: 'snell_roundhandregular';
-	font-size:20pt;
+	font-size:17pt;
 	z-index: 2;
 	-webkit-user-select: none;  /* Chrome all / Safari all */
   	-moz-user-select: none;     /* Firefox all */
@@ -161,22 +161,22 @@ a:hover {
 }
 
 #huvud a:hover {
-	font-size: 17pt;
+	font-size: 16pt;
 }
 
 #huvud-right a:hover {
-	font-size: 17pt;
+	font-size: 16pt;
 }
 
 #back a:hover {
-	font-size: 17pt;
+	font-size: 16pt;
 }
 
 #back {
 	position: fixed;
 	text-align: center;
 	width: 10%;
-	left: 45%;
+	left: 50%;
 }
 
 .break { /*LINE-HEIGHT MELLAN RADER*/

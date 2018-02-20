@@ -31,8 +31,6 @@ img {
   font-size: 17pt;
   text-align: center;
   line-height: 30px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 #startpage-menu a:hover {
@@ -81,8 +79,8 @@ img {
   float: center;
   display: inline-block;
   padding: 0;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .front-image {
@@ -185,6 +183,11 @@ img {
 #perfume {
   height: 70vh;
   margin-top: 4vh;
+}
+
+#website {
+  height: 80vh;
+  margin-top: 2vh;
 }
 
 #illustration {
