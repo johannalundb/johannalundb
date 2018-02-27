@@ -171,8 +171,8 @@ img {
 /*Ingen bild får vara högre än 80vh! (Med margi-top + height)*/
 
 #broderi {
-  height: 75vh;
-  margin-top: 2vh;
+  height: 73vh;
+  margin-top: 3vh;
   width: auto;
 }
 
@@ -183,12 +183,12 @@ img {
 
 #paris {
   height: 70vh;
-  margin-top: 5vh;
+  margin-top: 4.5vh;
 }
 
 #perfume {
   height: 70vh;
-  margin-top: 6vh;
+  margin-top: 5.5vh;
 }
 
 #website {
