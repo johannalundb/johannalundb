@@ -1,0 +1,261 @@
+body {
+	background-color: #8f70ee;
+}
+
+
+h2 {
+	font-family: 'Literaturnaya';
+	font-size: 25pt;
+	font-style: italic;
+	text-align: center;
+	color: white;
+}
+
+h3 {
+	font-family: 'blocusregular';
+	text-align: center;
+	font-size: 20pt;
+	color: white;
+}
+
+h4 {
+	font-family: 'blocusregular';
+	text-align: center;
+	font-size: 20pt;
+	color: white;
+}
+
+p {
+	font-family: 'blocusregular';
+	font-style: italic;
+	font-size: 16pt;
+	padding: 7px 0 5px 0;
+	color: white;	
+}
+
+img {
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.lilith-header {
+	height: 100vh;
+
+}
+
+
+.lilith-header img {
+	height: 82vh;
+	width: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#lilith-logo{
+	margin-top: 50px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
+}
+
+.lilith-text {
+	margin: auto;
+	width: 70%;
+	max-width: 370px;
+	margin-top: -30px;
+	text-align: center;
+}
+
+
+.lilith-text-box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	margin-top: 45vh;
+	text-align: center;
+}
+
+.lilith-text-box a {
+	color: white;
+	font-style: normal;
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+.lilith-text-box a:hover {
+	font-family: 'blocusregular';
+	font-style: italic;
+	font-size: 20pt;
+	font-weight: normal;
+}
+
+#kate {
+	width: 300px;
+	margin: auto;
+}
+
+#lilith-illu {
+	position: absolute;
+	width: 340px;
+	left: 50px;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#rose-left {
+	position: fixed;
+	left: 0;
+	top: 40px;
+	height: 92vh;
+	width: auto;
+	margin-left: 10px;
+}
+
+#rose-right {
+	position: fixed;
+	right: 0;
+	top: 40px;
+	height: 92vh;
+	margin-right: 10px;
+	width: auto;
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#venus-left {
+	margin-left: 13%;
+	margin-top: 18vh;
+	height: 75vh;
+	transform: scaleX(-1);
+}
+
+#venus-right {
+	margin-right: 13%;
+	margin-top: 18vh;
+	height: 75vh;
+}
+
+#scorpio-left {
+	margin-left: 32%;
+	bottom:0;
+	margin-bottom: 13vh;
+	height: 20vh;
+	transform: scaleX(-1);
+}
+
+#scorpio-right {
+	margin-right: 32%;
+	bottom:0;
+	margin-bottom: 13vh;
+	height: 20vh;
+}
+
+#clothes-rubrik h3{
+	position: absolute;
+  	left: 0;
+  	right: 0;
+  	height: auto;
+}
+
+#clothes-rubrik #clothes-fire img{
+	position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: -20px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 360px;
+}
+
+#clothes-div {
+	margin-top: 100px;
+	padding-top: 30px;
+}
+
+
+
+#clothes-div p {
+	margin-left: 15%;
+}
+
+#illustration-div {
+	margin-top: 150px;
+}
+
+
+div#clothes-div .lilith-image-box {
+	margin: auto;
+	width: 60%;
+	min-width: 300px;
+	max-width: 500px;
+	margin-top: 10px;
+}
+
+div#illustration-div .lilith-image-box {
+	margin: auto;
+	width: 50%;
+	max-width: 450px;
+	min-width: 300px;
+	margin-top: 10px;
+}
+
+#mobile-logo {
+	display: none;
+}
+
+/* ---- Mobile ---- */
+
+@media only screen and (max-width: 868px) {
+
+    #rose-left, #rose-right {
+    	display: none;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #rose-left, #rose-right, #scorpio-left, #scorpio-right, #venus-left {
+    	display: none;
+    }
+ 	
+ 	#lilith-logo {
+ 		display: none;
+ 	}
+
+ 	#mobile-logo {
+ 		display: block;
+ 		width: 56%;
+ 		margin-left: 22%;
+ 	}
+
+	#venus-right {
+	margin: auto;
+	margin-top: 10vh;
+	}
+
+	#lilith-logo{
+	height: 150px;
+	}
+	
+	div#clothes-div .lilith-image-box {
+	width: 100%;
+	
+}
+
+}
