@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'snell_roundhandregular';
+    src: url('fonts/snellroundhand-01-webfont.woff2') format('woff2'),
+         url('fonts/snellroundhand-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background: #232323;
+  margin: 0;
+  -webkit-scroll-snap-type: mandatory;
+-webkit-scroll-snap-points-y: repeat(100%);
+-webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+h1,  p{
+  color: #cc9f6b;
+  font-size: 11pt;
+  font-weight: 400;
+}
+
+ a{
+  padding-left: 5px;
+  font-family: 'snell_roundhandregular';
+  text-decoration: none;
+  color: #cc9f6b;
+  font-size: 16pt;
+  
+}
+/*HEADER*/
+#header {
+  width: 60vw;
+  left: 20vw;
+  position: fixed;
+  top: 10px;
+  z-index: 1;
+}
+
+a:hover {
+  color:blue;
+}
+
+#home {
+  display: inline-block;
+}
+
+#about{
+  right: 0;
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+}
+/*HEADER end*/
+
+.box {
+  width: 60vw;
+  margin-left: 20vw;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+.text-box {
+  display: block;
+  width: 30%;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  resize: vertical;
+}
+
+/*IMAGES*/
+.img-horizontal {
+  width: 45%;
+}
+
+.img-vertical {
+  width: 65%;
+}
+
+.img-box {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.img-box img {
+  float: right;
+  margin-right: 35%;
+}
+
+.img-box img:hover {
+  animation-name: spinner;
+  animation-duration: 3.5s;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(0deg);  }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+#about-text{
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#about-text a, p{
+  font-size: 13pt;
+  font-family: 'Times New Roman';
+  padding-left: 0;
+}
+.content-box {
+  width: 60vw;
+  margin-left: 20vw;
+  padding-top: 50px;
+}
+
+.content-img-horizontal {
+  width: 49%;
+}
+
+.img-right {
+  margin-left: 2%;
+}
+
+
+  @media only screen and (min-aspect-ratio: 47/29) { 
+}
+
+@media only screen and (max-width: 900px) {
+  .box {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+#header {
+  width: 80vw;
+  left: 10vw;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  
+}
