@@ -16,11 +16,17 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+h1 {
+  font-size: 13pt;
+  color: #cc9f6b;
+  font-weight: 400;
+  margin-bottom:10px;
+}
 
-h1,  p{
+.text-box p{
   color: #cc9f6b;
   font-size: 11pt;
-  font-weight: 400;
+  margin-top: 5px;
 }
 
  a{
