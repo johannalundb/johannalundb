@@ -9,9 +9,12 @@
 body {
   background: #232323;
   margin: 0;
-  -webkit-scroll-snap-type: mandatory;
--webkit-scroll-snap-points-y: repeat(100%);
--webkit-font-smoothing: antialiased;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -23,7 +26,7 @@ h1 {
   margin-bottom:10px;
 }
 
-.text-box p{
+.text-box p{  d
   color: #cc9f6b;
   font-size: 11pt;
   margin-top: 5px;
@@ -68,6 +71,7 @@ a:hover {
   height: 100vh;
   position: relative;
   z-index: 0;
+  scroll-snap-align: start;
 }
 
 .text-box {
@@ -91,10 +95,8 @@ a:hover {
 }
 
 .img-box {
-  float: right;
   position: absolute;
-  right: 0;
-  top: 50%;
+  top: 50%; /*Centrerar bilden*/
   transform: translateY(-50%);
 }
 
@@ -124,21 +126,12 @@ a:hover {
   font-size: 13pt;
   font-family: 'Times New Roman';
   padding-left: 0;
-}
-.content-box {
-  width: 60vw;
-  margin-left: 20vw;
-  padding-top: 50px;
+  color: #cc9f6b;
 }
 
-.content-img-horizontal {
-  width: 49%;
+.mobile-img {
+  display: none;
 }
-
-.img-right {
-  margin-left: 2%;
-}
-
 
   @media only screen and (min-aspect-ratio: 47/29) { 
 }
@@ -155,5 +148,49 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-  
+  .box {
+    width: 90vw;
+    margin-left: 5vw;
+  }
+
+  #header {
+    width: 90vw;
+    left: 5vw;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .text-box {
+    width: 73%;
+    float: left;
+    margin-left: 15%;
+    display: block;
+    flex-direction: none;
+    justify-content: none;
+    height: auto;
+    resize: none;
+  }
+
+  .text-box p {
+    margin-bottom: 0;
+  }
+
+  .mobile-img {
+    display: block;
+
+  }
+
+  .mobile-img img{
+    width: 70%;
+    margin-left: 15%;
+  }
+
+.mobile-center {
+  position: absolute;
+  top: 50%; /*Centrerar bilden*/
+  transform: translateY(-50%);
 }
+
+
