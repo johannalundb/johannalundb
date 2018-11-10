@@ -148,6 +148,12 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+
+  body {
+  scroll-snap-type: none;
+  overflow: scroll;
+  -webkit-overflow-scrolling: none;
+}
   .box {
     width: 90vw;
     margin-left: 5vw;
