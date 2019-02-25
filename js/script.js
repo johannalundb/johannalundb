@@ -10,7 +10,7 @@ window.onload = function(){
     image.setAttribute("index",0);
 
     // grab all images within container
-    var imgs = image.querySelectorAll("img");
+    var imgs = image.querySelectorAll(".img");
 
     // hide all except the first image
     for (var i = 0; i < imgs.length; i++){
@@ -30,7 +30,7 @@ window.onload = function(){
       var index = el.getAttribute("index");
 
       // grab all the images within the container
-      var imgs = el.querySelectorAll("img");
+      var imgs = el.querySelectorAll(".img");
 
       // if we are not at the end, lets move forward
       if (index < imgs.length - 1){
