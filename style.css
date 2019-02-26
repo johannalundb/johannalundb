@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  background:#fff;
+  background:#eaeaea;
   scroll-snap-type: y mandatory;
   width: 100vw;
   height: 100vh;
@@ -91,13 +91,18 @@ p::selection {
   margin: 0;
 }
 
+#header p {
+  padding-right: 40px;
+}
+
 #header a:hover, a:hover {
   color:#73e55c;
 }
 
 #arrow-left, #arrow-right {
   position: fixed;
-  top: 48.5vh;
+  top: 49vh;
+  display: block;
 }
 
 #arrow-left {
@@ -242,6 +247,6 @@ iframe {
   .mobile-img img{width: 70%;margin-left: 15%;}
   .mobile-center {position: absolute;top: 50%; /*Centrerar bilden*/transform: translateY(-50%);}
   .content-box {width: 90vw; margin-left: 5vw;}
-  iframe {display: none;}
+  iframe, #arrow-left, #arrow-right {display: none;}
 }
 
