@@ -11,16 +11,27 @@
     <link rel="stylesheet" href="reset.css">
     
     <!-- import the webpage's javascript file -->
-    <!-- <script src="js/jquery-3.3.1.min.js" defer></script> -->
-    <!-- <script src="js/script.js" defer></script> -->
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <!-- Object Fit polyfill -->
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+
+    <!-- Jarallax -->
+    <link href="jarallax/jarallax.css" rel="stylesheet">
+    <script src="jarallax/jarallax.js"></script>
+    <script src="jarallax/jarallax-video.js"></script>
+    <script src="jarallax/jarallax-element.js"></script>
   </head>  
 
   <body>
 
-    <div class="vimeo-wrapper">
+    <!-- <div class="vimeo-wrapper">
        <iframe class="vimeo-iframe" src="https://player.vimeo.com/video/319993736?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div> -->
+    <div id="video-background">
+    <div class="jarallax" data-speed="1" data-video-src="https://vimeo.com/319993736"></div>
     </div>
-
     <div id="header">
       <div><a href="index.html">Johanna Lundberg</a></div>
       <div><a href="mailto:johannalundberg@live.com">Contact</a></div>

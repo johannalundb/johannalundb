@@ -189,6 +189,16 @@ a::selection {
   font-size: 2.9vw;
 }
 
+.jarallax {
+    height: 100%;
+    
+}
+
+#video-background {
+  width: 100vw;
+  height: 100vh;
+    position: fixed;
+}
 
 /*CONTENT PAGE*/
 .content-box {
