@@ -197,7 +197,7 @@ a::selection {
 #video-background {
   width: 100vw;
   height: 100vh;
-    position: fixed;
+  position: fixed;
 }
 
 /*CONTENT PAGE*/
@@ -218,6 +218,10 @@ a::selection {
 
 .content-two-img-vertical img{
   width: 49%;
+}
+
+.img-right {
+  margin-left: 2%;
 }
 
 .rotate90 {
