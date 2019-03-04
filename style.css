@@ -218,10 +218,11 @@ a::selection {
 
 .content-two-img-vertical img{
   width: 49%;
+  height: auto;
 }
 
 .img-right {
-  margin-left: 2%;
+  float: right;
 }
 
 .rotate90 {
