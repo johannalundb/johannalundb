@@ -13,7 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   top: 0;
-  overflow: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -281,6 +281,6 @@ iframe {
   .mobile-img img{width: 70%;margin-left: 15%;}
   .mobile-center {position: absolute;top: 50%; /*Centrerar bilden*/transform: translateY(-50%);}
   .content-box {width: 90vw; margin-left: 5vw;}
-  iframe, #arrow-left, #arrow-right {display: none;}
+  iframe, #arrow-left, #arrow-right, #video-background {display: none;}
 }
 
