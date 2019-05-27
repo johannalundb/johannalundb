@@ -69,7 +69,12 @@ a::selection {
 
 .text-box p{ 
   font-size: 11pt;
+  line-height: 13pt;
   margin-top: 5px;
+}
+.text-box h1 {
+  font-size: 15pt;
+  margin-bottom:3pt;
 }
 
 /*VIDEO*/
