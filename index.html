@@ -7,128 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- import the webpage's javascript file -->
     <script src="js/jquery-3.3.1.min.js" defer></script>
     <script src="js/script.js" defer></script>
-
-    <!-- Object Fit polyfill -->
-    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
-
-    <!-- Jarallax -->
-    <link href="jarallax/jarallax.css" rel="stylesheet">
-    <script src="jarallax/jarallax.js"></script>
-    <script src="jarallax/jarallax-video.js"></script>
-    <script src="jarallax/jarallax-element.js"></script>
   </head>  
 
   <body>
+    <img id="background-image" src="assets/green.png">
+    <p>Johanna Lundberg</p>
+    <p>Graphic & <span class="no-break">Web Designer</span></p>
+    <p>25 years old</p>
+    <!-- <h2>Utbildning:</h2> -->
+    <p>BFA in Visual Communication, <span class="no-break">Beckmans College of Design</span></p>
+    <!-- <p>Currently works at <span class="no-break">Note Design Studio</span></p> -->
+    <h2>A selection of projects:</h2>
 
-    <!-- <div class="vimeo-wrapper">
-       <iframe class="vimeo-iframe" src="https://player.vimeo.com/video/319993736?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div> -->
-    <div id="video-background">
-    <div class="jarallax" data-speed="1" data-video-src="https://vimeo.com/319993736"></div>
+    <button class="collapsible">1. Digital Garden</button>
+  <div class="panel">
+    <div class="center-content">
+      <p>A visual examination of physical and digital materiality. By using the garden as a metaphore in a digital context to create a free space for visual desires.</p>
+      <img src="assets/digitalgarden/johanna_lundberg_digitalgarden_01.jpg">
+      <p>Graduation project in Visual Communication, 2019.<br>
+      Visit website at: <a href="http://digitalgarden.nu" target="_blank">www.digitalgarden.nu</a>.</p>
     </div>
-    <div id="header">
-      <div><a href="index.html">Johanna Lundberg</a></div>
-      <div><a href="mailto:johannalundberg@live.com">Contact</a></div>
+  </div>
+
+  <button class="collapsible">2. Sport Psyche</button>
+  <div class="panel">
+    <div class="center-content">
+      <p>Fashion is like sport and sport is like fashion. They both measure prestation and competition at the arena, runway, the bench or back stage. You win or you lose. </p>
+      <img src="assets/sportpsyche/movie03.png">
+      <p>Collaboration with: Kitty Schumacher, Agnes Vannerus Lindblom, Carl Cavallius, Jonthan Jervelind, Susanna Lycke, Gabriel Fager Ferrari & Sofus Nyström</p>
+      <img src="assets/sportpsyche/movie02.png">
+      <p>See the movie & the digital lookbook at: <a href="http://sportpsyche.se" target="_blank">www.sportpsyche.se</a>.</p>
+      <!-- <img src="assets/sportpsyche/baksida.jpg"> -->
     </div>
+  </div>
 
-    <!-- <div class="box" id="about">
-      <div id="about-text">
-        <p>
-          Hello! My name is Johanna Lundberg and I am currently studying BFA in Visual Communication at Beckmans College of Design in Stockholm. <br><br>
-          Get in contact: <br>
-          <a href="mailto:johannalundberg@live.com">johannalundberg@live.com</a><br> 
-          +46739881041<br><br>
-        </p>
-
-      </div> -->
-
+  <button class="collapsible">3. Kristall, Vertikal Accent</button>
+    <div class="panel">
+      <div class="center-content">
+        <p>A storytelling website about the famous glass obelisk at Sergels Torg and the visions behind it. <!-- An exploration of the website as a format, and how you can tell a story in an interesting way in mobile-format. --></p>
+        <img src="assets/kristall/kristall.jpg">
+        <!-- <img src="assets/kristall/grey_sculpture.jpg"> -->
+        <p>Visit the website <a href="https://kristall.johannalundberg.nu" target="_blank">here</a> (works best in mobile format).</p> 
     </div>
-
-    <div class="box"><!--DIGITAL GARDEN-->
-        <div class="mobile-center">
-          <div class="mobile-img"><a target="_blank" href="http://digitalgarden.nu"><img src="assets/digitalgarden/digitalgarden_03.png"/></a></div><!--Mobile-->
-          <div class="text-box">
-            <h1>Digital Garden</h1>
-            <p>Graduation project in Visual Communication, 2019. Visit website at: www.digitalgarden.nu</p>
-          </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a target="_blank" href="http://digitalgarden.nu"><img class="img-horizontal" src="assets/digitalgarden/digitalgarden_03.png"/></a></div>
-    </div> <!--end of box-->
-
-    <div class="box"><!--SPORT PSYCHE-->
-        <div class="mobile-center">
-          <div class="mobile-img"><a target="_blank" href="http://sportpsyche.se"><img src="assets/sportpsyche/sportpsyche_6.png"/></a></div><!--Mobile-->
-          <div class="text-box">
-            <h1>Sport Psyche</h1>
-            <p>Art direction & concept for Beckmans Fashion Collaboration 2019. Visit website at: www.sportpsyche.se</p>
-          </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a target="_blank" href="http://sportpsyche.se"><img class="img-horizontal" src="assets/sportpsyche/sportpsyche_6.png"/></a></div>
-    </div> <!--end of box-->
+  </div>
 
 
-    <div class="box"><!--KRISTALL, VERTIKAL ACCENT-->
-        <div class="mobile-center">
-	        <div class="mobile-img"><a href="kristall.html"><img src="assets/Kristall/Kristall.jpg"/></a></div><!--Mobile-->
-	        <div class="text-box">
-		        <h1>Kristall, Vertikal Accent</h1>
-		        <p>A storytelling website about the famous glass obelisk at Sergels Torg and the visions behind it. An exploration of the website as a format, and how you can tell a story in an interesting way in mobile-format.</p>
-	        </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a href="kristall.html"><img class="img-vertical" src="assets/Kristall/Kristall.jpg"/></a></div>
-    </div> <!--end of box-->
-
-    <div class="box"><!--EN HÄLSNING FRÅN HAVET-->
-      <div class="mobile-center">
-        <div class="mobile-img"><a href="broderi.html"><img src="assets/broderi.png"/></a></div><!--Mobile-->
-        <div class="text-box">
-          <h1>En hälsning från havet</h1>
-          <p>Greetings from the ocean.“I don’t need you, but you need me”. A visual interpretation of the Beijer Institute's research on the ocean. We are talking about thinking about the environment and the ocean as making nature a service, but it is actually humanity that will ultimately suffer the hardest. We consume the earth's assets at a rate that is not sustainable.</p>
-        </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a href="broderi.html"><img class="img-horizontal" src="assets/broderi.png"/></a></div>
-    </div> <!--end of box-->
-
-    <div class="box"><!--LILITH SOCIETY-->
-      <div class="mobile-center">
-        <div class="mobile-img"><a href="lilith.html"><img src="assets/lilith/firenipple.jpg"/></a></div><!--Mobile-->
-        <div class="text-box">
-          <h1>Lilith Society</h1>
-          <p>Brand created together with Fredrika Frykstrand. Clothes and illustrations, inspired by astrology. 
-          Sold at Beckmans christmas market 2017, Nobel christmas market 2017, Acne christmas party 2017 and through our instagram @lilith_society.</p>
-        </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a href="lilith.html"><img class="img-vertical" src="assets/lilith/firenipple.jpg"/></a></div>
-    </div> <!--end of box-->
-
-    <div class="box"><!--ONLINE SHARING-->
-      <div class="mobile-center">
-        <div class="mobile-img"><a href="onlinesharing.html"><img src="assets/website2.png"/></a></div><!--Mobile-->
-        <div class="text-box">
-          <h1>Online Sharing</h1>
-          <p>A website containing various investigations into sharing online. This is a group project together with Emelie Maxdotter & Jonathan Jervelind, where we did research on different subjects in online sharing, and did each different designs on the folders. I coded & designed the website in a way to present the folders visually. Visit the website here</p>
-        </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a href="onlinesharing.html"><img class="img-horizontal" src="assets/website2.png"/></a></div>
-    </div> <!--end of box-->
+  <div id="footer"><a href="https://www.instagram.com/johannalundb/" target="_blank">Instagram</a><a href="https://www.linkedin.com/in/johanna-lundberg-85427a7a/" target="_blank">LinkedIn</a><a href="mailto:johannalundberg@live.com">E-mail</a></div>
 
 
-    <div class="box"><!--PARIS FASHION WEEK-->
-      <div class="mobile-center">
-        <div class="mobile-img"><a href="paris.html"><img src="assets/paris/sissel02.jpg"/></a></div><!--Mobile-->
-        <div class="text-box">
-          <h1>Paris Fashion Week</h1>
-          <p>Beckmans x Paris Fashion Week; project for 5 fashion designers (both students and alumni) from Beckmans College of Design, fashion programme exposing in Paris during fashion week. Fashion Show at the Institut Suedois, and show room at 0fr galerie, libraire.</p>
-        </div>
-      </div><!--mobile-center end-->
-      <div class="img-box"><a href="paris.html"><img class="img-vertical" src="assets/paris/sissel02.jpg"/></a></div>
-    </div> <!--end of box-->
-
-  </body>
+    </body>
 </html>

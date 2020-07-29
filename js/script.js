@@ -1,17 +1,85 @@
-$(document).ready(function(){
-	$(".content-box").hide().fadeIn(2000);
-	$(".box").hide().fadeIn(2000);
-	$(".content-text").hide().fadeIn(3000);
-	$("#video-background").hide().fadeIn(4000);
+ // W3C's JS Code
+  var acc = document.getElementsByClassName("collapsible");
+  var i;
+    
+  // Add onclick listener to every collapsible element
+  for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+      // For toggling purposes detect if the clicked section is already "active"
+      var isActive = this.classList.contains("active");
 
+      // Close all collapsibles
+      var allcollapsibles = document.getElementsByClassName("collapsible");
+      for (j = 0; j < allcollapsibles.length; j++) {
+        // Remove active class from section header
+        allcollapsibles[j].classList.remove("active");
 
-  // object-fit polyfill run
-        objectFitImages();
-        /* init Jarallax */
-        jarallax(document.querySelectorAll('.jarallax'));
+        // Remove the max-height class from the panel to close it
+        var panel = allcollapsibles[j].nextElementSibling;
+        var maxHeightValue = getStyle(panel, "maxHeight");
+      
+      if (maxHeightValue !== "0px") {
+          panel.style.maxHeight = null;
+        }
+      }
 
-        jarallax(document.querySelectorAll('.jarallax-keep-img'), {
-            keepImg: true,
-        });
+      // Toggle the clicked section using a ternary operator
+      isActive ? this.classList.remove("active") : this.classList.add("active");
 
-})
+      // Toggle the panel element
+      var panel = this.nextElementSibling;
+      var maxHeightValue = getStyle(panel, "maxHeight");
+      
+      if (maxHeightValue !== "0px") {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    };
+  }
+  
+  // Cross-browser way to get the computed height of a certain element. Credit to @CMS on StackOverflow (http://stackoverflow.com/a/2531934/7926565)
+  function getStyle(el, styleProp) {
+  var value, defaultView = (el.ownerDocument || document).defaultView;
+  // W3C standard way:
+  if (defaultView && defaultView.getComputedStyle) {
+    // sanitize property name to css notation
+    // (hypen separated words eg. font-Size)
+    styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+    return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+  } else if (el.currentStyle) { // IE
+    // sanitize property name to camelCase
+    styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
+      return letter.toUpperCase();
+    });
+    value = el.currentStyle[styleProp];
+    // convert other units to pixels on IE
+    if (/^\d+(em|pt|%|ex)?$/i.test(value)) { 
+      return (function(value) {
+        var oldLeft = el.style.left, oldRsLeft = el.runtimeStyle.left;
+        el.runtimeStyle.left = el.currentStyle.left;
+        el.style.left = value || 0;
+        value = el.style.pixelLeft + "px";
+        el.style.left = oldLeft;
+        el.runtimeStyle.left = oldRsLeft;
+        return value;
+      })(value);
+    }
+    return value;
+  }
+}
+
+var coll = document.getElementsByClassName("small-collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
