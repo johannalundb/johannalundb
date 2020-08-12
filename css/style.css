@@ -46,6 +46,10 @@ h2 {
   white-space: nowrap;
 }
 
+#whatsnext-img {
+  width: 900px;
+}
+
 .collapsible {
   cursor: pointer;
   width: 100%;
@@ -161,6 +165,10 @@ div.panel img {
 
 .no-break {
   white-space: normal;
+}
+
+#whatsnext-img {
+  width: 100vw;
 }
 
 }

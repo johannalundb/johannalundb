@@ -1,5 +1,6 @@
  // W3C's JS Code
   var acc = document.getElementsByClassName("collapsible");
+  var coll = document.getElementsByClassName("small-collapsible"); //small-coll
   var i;
     
   // Add onclick listener to every collapsible element
@@ -69,8 +70,7 @@
   }
 }
 
-var coll = document.getElementsByClassName("small-collapsible");
-var i;
+//small-coll
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
