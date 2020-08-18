@@ -25,7 +25,6 @@ body {
   background: none;
 }
 
-
 /*TYPOGRAPHY*/
 p, h2,  #footer, .collapsible {
   font-family: 'Times New Roman';
@@ -139,14 +138,20 @@ div.panel img {
 
 @media only screen and (max-width: 900px) {
 
-  p, h2,  #footer, .collapsible {
-  font-size: 33px;
+p {
+  font-size: 8vw;
+  padding: 10px 30px 7px 30px;  
+  margin: 0;
+}
+
+h2, .collapsible, #footer {
+  font-size: 5.5vw;
   padding: 10px 30px 7px 30px;  
   margin: 0;
 }
 
 div.panel p {
-  font-size: 20px;
+  font-size: 4.5vw;
   width: 95vw;
   margin: 5px;
 }
@@ -161,10 +166,6 @@ div.panel img {
 
 #footer a {
   font-size: 18px;
-}
-
-.no-break {
-  white-space: normal;
 }
 
 #whatsnext-img {
