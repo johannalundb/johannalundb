@@ -4,8 +4,7 @@ body {
   width: 100vw;
   height: 100vh;
   top: 0;
-  overflow-y: hidden;
-  /*-webkit-overflow-scrolling: touch;*/
+  -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -22,7 +21,7 @@ body {
 
 ::selection {
   color: black;
-  background: none;
+  background: silver;
 }
 
 /*TYPOGRAPHY*/
