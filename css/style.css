@@ -4,6 +4,7 @@ body {
   width: 100vw;
   height: 100vh;
   top: 0;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
@@ -125,19 +126,23 @@ div.panel img {
 @media only screen and (max-width: 900px) {
 
 p {
-  /*font-size: 8vw;*/
+  font-size: 23pt;
   padding: 10px 30px 7px 30px;  
   margin: 0;
 }
 
-h2, .collapsible, #footer {
-  /*font-size: 5.5vw;*/
+h2, .collapsible {
+  font-size: 16pt;
   padding: 10px 30px 7px 30px;  
   margin: 0;
+}
+
+#footer a {
+  font-size: 10pt;
 }
 
 div.panel p {
-  /*font-size: 13pt;*/
+  font-size: 13pt;
   width: 95vw;
   margin: 5px;
 }
@@ -154,9 +159,6 @@ div.panel img {
   margin:5px 0 5px 0;
 }
 
-#footer a {
-  font-size: 18px;
-}
 
 #whatsnext-img {
   width: 100vw;
