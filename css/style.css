@@ -20,7 +20,7 @@ body {
 }
 
 ::selection {
-  color: black;
+  color: white;
   background: silver;
 }
 
@@ -29,7 +29,7 @@ h1, h2, h3, h4, p, .collapsible, #footer  {
   font-family: 'Times New Roman';
   font-size: 35pt;
   color: #fff;
-  background: linear-gradient(0deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 95%);
+  background: linear-gradient(0deg, rgba(255,255,255,0.8) 5%, rgba(255,255,255,0) 95%);
   text-align: center;
   padding: 10px 30px 7px 30px;  
   margin: 0;
@@ -75,7 +75,7 @@ h4 {
 }
 
 .active, .collapsible:hover {
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(178, 178, 178);
   transition: 0.4s;
 }
 
@@ -148,6 +148,18 @@ div.panel img {
   color:magenta;
   transition: 0.5s;
 }
+
+@media only screen and (min-width: 1400px) {
+h1 {
+  font-size: 7vh;
+}
+
+h2, h3 {
+  font-size: 4vh;
+}
+
+}
+
 
 @media only screen and (max-width: 900px) {
 
