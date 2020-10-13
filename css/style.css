@@ -134,6 +134,10 @@ div#digital-projects{
   transition: max-height 1s ease-out;
 }
 
+div#footer{
+  transition: max-height 100ms ease-out;
+}
+
 div.panel p {
   display: block;
   background: none;
@@ -145,7 +149,10 @@ div.panel p {
 }
 
 div.panel a {
-  color: rgb(150, 150, 150)
+  color: rgb(150, 150, 150);
+  font-size: 16pt;
+  line-height: 1.1;
+  text-decoration: none;
 }
 
 div.panel a:hover {
@@ -173,16 +180,14 @@ div.panel img {
   background: linear-gradient(0deg, white 0%, lightgreen 95%);
 }
 
-#footer a {
-  color: #4d4d4d;
-  text-decoration: none;
+#footer p {
+  color: #6d6d6d;
   margin: 0 20px 0 20px;
   font-size: 13pt;
 }
 
-#footer a:hover {
-  color:magenta;
-  transition: 0.5s;
+#footer p:hover {
+  color: #a94fffff;
 }
 
 
@@ -216,9 +221,6 @@ h2 {
   padding: 10px 30px 7px 30px;  
 }
 
-#footer a {
-  font-size: 10pt;
-}
 
 div.panel p {
   font-size: 13pt;
