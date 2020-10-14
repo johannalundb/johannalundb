@@ -99,13 +99,6 @@ hr.divider {
   transition: 0.4s;
 }
 
-#about-section {
-}
-
-#about-button.active {
-  background: linear-gradient(0deg, rgba(255,255,255,0.8) 5%, rgba(255,255,255,0) 95%);
-}
-
 .active {
   background-color: rgb(178, 178, 178);
 }
@@ -188,6 +181,10 @@ div.panel img {
 
 #footer p:hover {
   color: #a94fffff;
+}
+
+.active p{
+  color: #a94fffff !important;
 }
 
 
