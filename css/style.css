@@ -62,7 +62,7 @@ h4 {
 div.panel p.finstilt {
   font-size: 12pt;
   font-style: italic;
-  width: 600px;
+  max-width: 600px;
   padding: 0;
 }
 
@@ -204,7 +204,7 @@ h2, h3 {
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
 h1 {
   font-size: 23pt;
@@ -222,13 +222,14 @@ h2 {
 }
 
 
-div.panel p {
+div.panel p, div.panel a {
   font-size: 13pt;
   width: 95vw;
   margin: 5px;
 }
-.wide-img, div.panel img {
-  width: 100vw;
+
+img.wide-img, div.panel img {
+  width: 100vw !important;
   margin: 5px 0 5px 0;
 }
 
