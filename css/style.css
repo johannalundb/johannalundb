@@ -222,6 +222,10 @@ h2 {
 div.panel p, div.panel a {
   font-size: 13pt;
   width: 95vw;
+  line-height: 1.2;
+}
+
+div.panel p {
   margin: 5px;
 }
 
